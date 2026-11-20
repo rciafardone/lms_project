@@ -1,0 +1,26 @@
+cat << 'EOF' > .gitignore
+# Virtual environments
+venv/
+backend/venv/
+.venv/
+*.py[cod]
+__pycache__/
+*.egg-info/
+
+# Environment variables & local secrets
+.env
+.env.*
+
+# SQLite & media (remove backend/db.sqlite3 if you want to keep a seeded local DB)
+backend/db.sqlite3
+backend/media/
+
+# Node / React
+frontend/node_modules/
+frontend/dist/
+frontend/.env*
+
+# OS / IDE / Ubuntu
+.DS_Store
+*~
+EOF
